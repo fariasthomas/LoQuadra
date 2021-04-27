@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Import fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--Import styles-->
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/pages/about.css">
+  <link rel="stylesheet" href="/styles/components/header.css">
+  <link rel="stylesheet" href="/styles/components/footer.css">
+  <title>Sobre | LoQuadra</title>
+</head>
+<body>
+
+  <div id="container">
+    <%- include('./components/header.ejs') %> 
+
+    <main>
+      <section class="description">
+        <img src="/images/garoto.jpg" alt="Imagem de um garoto chutando uma bola">
+        
+        <div class="text">
+          <h2>Empresa</h2>
+
+          <p>
+            A Empresa LoQuadra nasceu com um olhar visionário que foi fundado por 5 estudantes de Sistema da Informação em 2021. Em busca sempre de novas tecnologias sempre a ideia de inovar e criar serviços criativos e práticos. Alem disso a empresa busca também novos conceitos e tecnologias para o desenvolvimento de serviços, obtendo a melhor solução para a necessidade do investimento de cada cliente.
+            LoQuadra quer facilidade a busca de locação de quadras esportivas para incentivar e melhorar a pratica esportista.
+            Hoje, a LoQuadra tem o segmento de Locação de quadras esportiva para diversos tipos de esportes, com a praticidade para o uso do nosso cliente. 
+          </p>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Missão</h3>
+
+          <p>Motivar as pessoas buscar inovações esportistas através da nossa maneira de atuar.</p>
+        </div>
+
+        <div class="card">
+          <h3>Visão</h3>
+
+          <p>Ser referência no mercado atual.</p>
+        </div>
+
+        <div class="card">
+          <h3>Valores</h3>
+
+          <p>Eficácia, ética, inovação e flexibilidade.</p>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./components/footer.ejs') %> 
+  </div>
+  
+  <script src="https://kit.fontawesome.com/3afe49e0d1.js" crossorigin="anonymous"></script>
+</body>
+</html>

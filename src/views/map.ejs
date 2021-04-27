@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Import fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--Links to map-->
+  <script 
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin="">
+  </script>  
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""
+  />
+  <!--Import styles-->
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/pages/map.css">
+  <title>Serviços | LoQuadra</title>
+</head>
+<body>
+
+  <div id="page-map">
+    <aside>
+      <header>
+        <img src="/images/logo.png" alt="Logo" />
+
+        <h2>Escolha um orfanato no mapa</h2>
+
+        <p>Muitas crianças estão esperando sua visita</p>
+      </header>
+
+      <footer>
+        <p>Sua localização: </p>
+        <strong>111111</strong>
+        <span>111111</span>
+
+        <a href="/" class="home-back">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </footer>
+    </aside>
+
+    <a href="/map/create" class="create">
+      <i class="fas fa-plus"></i>
+    </a>
+
+    <div id="mapid" onclick={handleMapClick} ></div>
+  </div> 
+
+  
+  <script src="/scripts/map.js"></script>
+  
+  <script src="https://kit.fontawesome.com/3afe49e0d1.js" crossorigin="anonymous"></script>
+</body>
+</html>

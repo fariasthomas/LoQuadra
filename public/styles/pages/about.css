@@ -1,0 +1,112 @@
+#container {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 10rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .description {
+  margin-bottom: 3rem;
+  padding: 0 8rem;
+  display: flex;
+}
+
+main .description img {
+  width: 40rem;
+  height: 50rem;
+  margin-right: 2rem;
+}
+
+main .description .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--white);
+  border: 1px solid #ccc;
+  padding: 0 1.5rem;
+}
+
+main .description .text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: Inter, sans-serif;
+}
+
+main .description .text p {
+  font-size: 1.25rem;
+  text-align: justify;
+  font-family: Inter, sans-serif;
+}
+
+main .cards {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3rem;
+}
+
+main .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    329.54deg,
+    var(--secundary-color-dark) 0%,
+    var(--secundary-color) 100%
+  );
+  padding: 0 1rem;
+  margin-right: 1rem;
+  width: 25rem;
+  height: 30rem;
+  border: 1px solid #ccc;
+}
+
+main .cards .card:last-child {
+  margin-right: 0;
+}
+
+main .cards .card:not(:first-child):not(:last-child) h3{
+  margin-bottom: 1.5rem;
+}
+
+main .cards .card:not(:first-child):not(:last-child) p{
+  margin-bottom: 2rem;
+}
+
+main .cards .card h3 {
+  font-size: 2rem;
+  font-family: Inter, sans-serif;
+  color: var(--white);
+  font-weight: 600;
+}
+
+main .cards .card p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Inter, sans-serif;
+  color: var(--white);
+  font-weight: 400;
+}
+
+@media (max-width: 1830px) {
+  main .cards .card {
+    width: 24rem;
+    height: 29rem;
+  }
+}
+
+@media (max-width: 1765px) {
+  main .cards .card {
+    width: 23rem;
+    height: 28rem;
+  }
+}
